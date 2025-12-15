@@ -11,20 +11,25 @@
     "verbatimModuleSyntax": true,
 
     /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
+    // "strict": true,
+    // "noUncheckedIndexedAccess": true,
+    // "noImplicitOverride": true,
 
-    /* If transpiling with TypeScript: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
+    // /* If transpiling with TypeScript: */
+    // "module": "NodeNext",
+    // "outDir": "dist",
+    // "rootDir": "src",
+    // "sourceMap": true,
 
     /* AND if you're building for a library: */
     "declaration": true,
 
     /* AND if you're building for a library in a monorepo: */
-    "declarationMap": true
-  }
+    "declarationMap": true,
+    "types": ["jest"]
+  },
+
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"],
+  "extends": "@react-native/typescript-config"
 }
