@@ -1,13 +1,35 @@
 {
   "name": "react-native-linkedin-oauth2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple package to integrate Linkedin OAuth2 in React Native Apps",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "keywords": [
+    "linkedin",
+    "oauth2",
+    "react-native"
+  ],
+  "author": "Nikhil Wankhede",
+  "homepage": "https://github.com/NikhilRW/react-native-linkedin-oauth2",
+  "bugs": {
+    "url": "https://github.com/NikhilRW/react-native-linkedin-oauth2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikhilRW/react-native-linkedin-oauth2.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  }
 }
