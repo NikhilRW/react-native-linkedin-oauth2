@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "A simple package to integrate Linkedin OAuth2 in React Native Apps",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "dev": "vitest",
     "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "ci": "npm run build && npm run check-format && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "keywords": [
     "linkedin",
@@ -30,6 +32,7 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.7.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
   }
 }
