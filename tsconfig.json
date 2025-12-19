@@ -1,11 +1,12 @@
 {
+  "extends": "@react-native/typescript-config",
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "es2022",
     "allowJs": true,
-    "resolveJsonModule": true,
+    // "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
@@ -17,9 +18,9 @@
 
     // /* If transpiling with TypeScript: */
     // "module": "NodeNext",
-    // "outDir": "dist",
-    // "rootDir": "src",
-    // "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
 
     /* AND if you're building for a library: */
     "declaration": true,
@@ -29,8 +30,10 @@
     "types": ["jest"],
     "lib": ["DOM", "ESNext"]
   },
-
+  "buildOptions": {
+    "verbose": true
+  },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"],
-  "extends": "@react-native/typescript-config"
+  "exclude": ["**/node_modules", "**/Pods", "**/build", "**/dist", "**/*.test.ts", "**/*.test.tsx"],
+  "typeRoots": ["./node_modules/@types","@types/node"],
 }
