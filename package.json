@@ -1,6 +1,6 @@
 {
   "name": "react-native-linkedin-oauth2",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple package to integrate Linkedin OAuth2 in React Native Apps",
   "scripts": {
     "test": "jest",

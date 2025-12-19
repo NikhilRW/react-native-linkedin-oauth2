@@ -5,6 +5,9 @@
 
 A simple, lightweight, and fully customizable React Native package for integrating LinkedIn OAuth2 authentication into your mobile apps. Built with TypeScript and designed for ease of use.
 
+⚠️⚠️⚠️⚠️ Warning THIS PACKAGE IS NOT TESTED IN IOS DEVICES
+If Any one find bugs while using it in ios device please open issue in this  [GitHub Repository](https://github.com/NikhilRW/react-native-linkedin-oauth2) ⚠️⚠️⚠️⚠️
+
 ## 📦 Installation
 
 ```bash

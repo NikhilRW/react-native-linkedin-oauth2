@@ -34,6 +34,13 @@
     "verbose": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods", "**/build", "**/dist", "**/*.test.ts", "**/*.test.tsx"],
-  "typeRoots": ["./node_modules/@types","@types/node"],
+  "exclude": [
+    "**/node_modules",
+    "**/Pods",
+    "**/build",
+    "**/dist",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ],
+  "typeRoots": ["./node_modules/@types", "@types/node"]
 }
