@@ -26,7 +26,8 @@
 
     /* AND if you're building for a library in a monorepo: */
     "declarationMap": true,
-    "types": ["jest"]
+    "types": ["jest"],
+    "lib": ["DOM", "ESNext"]
   },
 
   "include": ["**/*.ts", "**/*.tsx"],
